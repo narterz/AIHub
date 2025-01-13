@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+  --main: #022213;
+  --accent: #bef237;
+  --textLight: #d6d6d4;
+  --textDark: #021106;
+  --background: #eaeaea;
+  --component: #ffffff;
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl font-bold text-textLight;
+  }
+  h2 {
+    @apply text-4xl font-bold text-textLight;
+  }
+  h3 {
+    @apply text-3xl font-semibold text-textLight;
+  }
+  h4 {
+    @apply text-2xl font-medium;
+  }
+  h5 {
+    @apply text-xl font-light text-textLight;
+  }
+  h6 {
+    @apply text-lg font-medium text-textLight;
+  }
+
+  aside {
+    @apply w-[12%] h-screen bg-main flex flex-col justify-between items-center p-3;
+  }
+
+  button {
+    @apply px-3 py-1 rounded-md  hover:opacity-80 transition-opacity duration-300 ease-in-out;
+  }
+
+  input {
+    @apply w-full h-full rounded-3xl indent-4 border border-textLight focus:outline-none;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply text-textLight text-3xl;
+  }
+
+  .searchbar-lg {
+    @appl;
+  }
+
+  .sidebar-btn {
+    @apply w-4/6;
+  }
+
+  .sidebar-container {
+    @apply w-full mt-5 p-3 flex flex-col items-center justify-between border-b border-textLight;
+
+    h5,
+    h6 {
+      @apply w-full;
+    }
+
+    ul {
+      @apply h-[90%] w-full flex flex-col justify-evenly;
+
+      li {
+        @apply flex items-center justify-between w-full cursor-pointer;
+
+        div {
+          @apply w-1/4 flex justify-center;
+        }
+
+        h6 {
+          @apply w-3/4 ms-3;
+        }
+      }
+    }
+  }
+  .btn-sm {
+    @apply w-[35%] border border-textLight;
+  }
+}
+
+@layer utilities {
+  .hover-color {
+    @apply group-hover:text-accent transition-colors duration-300 ease-in-out cursor-pointer;
+  }
+
+  .hover-opacity {
+    @apply hover:opacity-80 transition-opacity duration-300 ease-in-out;
+  }
+
+  .flex-middle {
+    @apply flex items-center justify-center;
+  }
+}

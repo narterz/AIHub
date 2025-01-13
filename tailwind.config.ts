@@ -9,9 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        main: "#022213",
+        accent: "#bef237",
+        textLight: "#d6d6d4",
+        textDark: "#021106",
+        background: "#eaeaea",
+        component: "#ffffff",
       },
+      backgroundImage: {
+        'modal-image': "url('/public/images/ModalImg.png')",
+      }
     },
   },
   plugins: [],
